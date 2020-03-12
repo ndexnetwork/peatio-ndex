@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Peatio Blockchain Plugin}
   spec.description   = %q{Peatio Blockchain Plugin for nPro}
   spec.homepage      = "https://www.ndexnetwork.com"
-  spec.license       = "Proprietary"
+  spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -34,8 +34,16 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  spec.add_dependency "activesupport", "~> 5.2.3"
+  spec.add_dependency "better-faraday", "~> 1.0.5"
+  spec.add_dependency "faraday", "~> 0.15.4"
+  spec.add_dependency "memoist", "~> 0.16.0"
+  spec.add_dependency "peatio", "~> 0.6.1"
 
-  spec.add_development_dependency "bundler", "~> 1.17"
+  spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_development_dependency "mocha", "~> 1.8"
+  spec.add_development_dependency "pry-byebug"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "webmock", "~> 3.5"
 end
