@@ -1,4 +1,5 @@
 # Peatio::Ndex
+[![Gem Version](https://badge.fury.io/rb/peatio-ndex.svg)](https://badge.fury.io/rb/peatio-ndex)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/peatio/ndex`. To experiment with that code, run `bin/console` for an interactive prompt.
 
